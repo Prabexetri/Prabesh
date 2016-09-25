@@ -1,4 +1,12 @@
+
 <% @ideas.each do |idea| %>
-    <h3><%= idea.description %></h3>
-    <h4><%= idea.author %></h4>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <blackquote>
+            <p><%= idea.description %></p>
+            <small><%= idea.author %></small>
+        </blackquote>
+      </div>
+    </div>
+
 <% end %>
