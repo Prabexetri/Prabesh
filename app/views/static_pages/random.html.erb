@@ -1,4 +1,5 @@
 
+<% if @idea.present? %>
 <%= link_to 'Inspire Me', random_path, class: 'btn btn-primary btn-block' %>
 
 <div class="panel panel-default">
@@ -14,3 +15,8 @@
         </div> 
       </div>
     </div>
+    
+    <h4>No ideas have been shared. Add one <%= link_to 'here', root_path %></h4>
+    
+<% end %>
+    
